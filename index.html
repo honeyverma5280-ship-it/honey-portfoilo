@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Honey Verma | Portfolio</title>
+  <meta name="description" content="Honey Verma, computer science student at Sandip University, Nashik. Data analysis in Excel, graph algorithms in Python, and Arduino electronics projects.">
+  <meta name="author" content="Honey Verma">
+  <meta property="og:title" content="Honey Verma | Portfolio">
+  <meta property="og:description" content="A live cricket analytics dashboard, a BFS social network connection finder and an Arduino automatic room light.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/img/cert-tech-charades-winner.jpg">
+  <meta name="theme-color" content="#138A7B">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23138A7B'/%3E%3Ctext x='32' y='42' font-size='28' font-family='Arial' font-weight='700' fill='white' text-anchor='middle'%3EHV%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script>
+    try { var t = localStorage.getItem('hv-theme'); if (t) document.documentElement.setAttribute('data-theme', t); } catch (e) {}
+  </script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <!-- Mobile top bar -->
+  <header class="topbar">
+    <a class="brand-sm" href="#home">Honey Verma</a>
+    <button class="icon-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="sidebar">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+  </header>
+
+  <!-- Sidebar -->
+  <aside class="sidebar" id="sidebar">
+    <div class="avatar" aria-hidden="true">
+      <span>HV</span>
+      <img src="assets/img/profile.jpg" alt="" onerror="this.remove()">
+    </div>
+    <h1 class="side-name">Honey Verma</h1>
+    <p class="side-role">Computer science student</p>
+
+    <nav aria-label="Main">
+      <a href="#home" class="active">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#dashboard">Cricket dashboard</a>
+      <a href="#education">Education</a>
+      <a href="#achievements">Achievements</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="side-foot">
+      <div class="socials">
+        <a href="https://github.com/honeyverma5280-ship-it" target="_blank" rel="noopener" aria-label="GitHub">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5A11.5 11.5 0 0 0 .5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.3.8-.6v-2c-3.2.7-3.9-1.5-3.9-1.5-.5-1.3-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.7 1.3 3.4 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.2 1.2a11 11 0 0 1 5.8 0c2.2-1.5 3.2-1.2 3.2-1.2.6 1.6.2 2.8.1 3.1.7.8 1.2 1.8 1.2 3.1 0 4.400-2.700 5.400-5.300 5.700.4.4.8 1.100.8 2.200v3.200c0 .3.2.7.8.6A11.500 11.500 0 0 0 23.500 12 11.500 11.500 0 0 0 12 .5Z"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/honey-verma-b00669422" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.4 2H3.6A1.6 1.6 0 0 0 2 3.600v16.800A1.600 1.600 0 0 0 3.600 22h16.800a1.600 1.600 0 0 0 1.600-1.600V3.600A1.600 1.600 0 0 0 20.400 2ZM8 18.500H5.300V9.800H8v8.700ZM6.700 8.600a1.600 1.600 0 1 1 0-3.100 1.600 1.600 0 0 1 0 3.100Zm11.800 9.900h-2.700v-4.200c0-1 0-2.300-1.400-2.300s-1.600 1.100-1.600 2.200v4.300h-2.700V9.800h2.600V11h.04a2.800 2.800 0 0 1 2.500-1.400c2.700 0 3.200 1.800 3.200 4.100v4.800Z"/></svg>
+        </a>
+        <a href="mailto:honeyverma5280@gmail.com" aria-label="Email">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+        </a>
+      </div>
+      <button class="theme-btn" id="themeBtn" type="button" aria-label="Switch colour theme">
+        <span class="t-light">Dark mode</span><span class="t-dark">Light mode</span>
+      </button>
+    </div>
+  </aside>
+  <div class="scrim" id="scrim"></div>
+
+  <main id="main">
+
+    <!-- HOME -->
+    <section id="home" class="hero">
+      <div class="hero-text">
+        <p class="hello">Hi, I'm</p>
+        <h2 class="hero-name">Honey Verma</h2>
+        <p class="tagline">I turn raw data and loose wires into things that work.</p>
+        <p class="lead">Computer science student at Sandip University, Nashik. I clean and analyse data in Excel, test graph algorithms in Python, and wire up Arduino circuits. Everything below is work I actually built.</p>
+        <div class="cta">
+          <a class="btn btn-primary" href="#projects">See my projects</a>
+          <a class="btn btn-ghost" href="#dashboard">Try the cricket dashboard</a>
+          <a class="btn btn-ghost" href="#contact">Contact me</a>
+        </div>
+      </div>
+
+      <figure class="net-wrap">
+        <canvas id="net" role="img" aria-label="Interactive network of dots. Click one dot to start a breadth-first search, then click another to see the shortest chain between them."></canvas>
+        <figcaption>
+          <span id="netMsg">Click a dot. Breadth-first search spreads out one hop at a time, the same idea as my Social Network Connection Finder.</span>
+          <span class="net-actions">
+            <button type="button" class="chip" id="netRandom">Random pair</button>
+            <button type="button" class="chip" id="netClear">Reset</button>
+          </span>
+        </figcaption>
+      </figure>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <h2 class="sec-title">About me</h2>
+      <div class="about-grid">
+        <div class="prose">
+          <p>I'm a computer science student who likes finding out how things behave. Give me a spreadsheet of 96 cricket records and I'll clean it, summarise it and build a dashboard. Give me a graph and I'll time how fast a search crosses it. Give me a PIR sensor and a relay and I'll make a lamp that switches itself on.</p>
+          <p>I work best in small teams. My Arduino mini project was built with three classmates, and my eSports club team earned a certificate of appreciation from the university.</p>
+          <p>I'm looking for internships where I can keep learning data analysis, software development and embedded systems while shipping something useful.</p>
+        </div>
+        <dl class="facts">
+          <div><dt>Based in</dt><dd>Nashik, Maharashtra, India</dd></div>
+          <div><dt>Studying at</dt><dd>Sandip University, School of CSE</dd></div>
+          <div><dt>Interested in</dt><dd>Data analysis, algorithms, embedded systems, web development</dd></div>
+          <div><dt>Goal</dt><dd>Land a first internship and grow into a data or software engineering role</dd></div>
+          <div><dt>Email</dt><dd><a href="mailto:honeyverma5280@gmail.com">honeyverma5280@gmail.com</a></dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills">
+      <h2 class="sec-title">Skills</h2>
+      <p class="sec-sub">Grouped by what I've used them for, so each skill points to real work.</p>
+      <div class="skill-grid">
+        <article class="skill">
+          <h3>Data analysis in Excel</h3>
+          <ul class="tags"><li>Data cleaning</li><li>Pivot tables</li><li>Charts</li><li>Dashboards</li><li>COUNTIFS / SUMIFS</li><li>Dropdown filters</li></ul>
+          <p>Used in the cricket performance workbook: 96 raw records cleaned, scored and summarised in six pivot tables.</p>
+        </article>
+        <article class="skill">
+          <h3>Programming</h3>
+          <ul class="tags"><li>Python</li><li>C / C++ (Arduino)</li><li>JavaScript</li><li>HTML</li><li>CSS</li></ul>
+          <p>Python for the BFS experiments, Arduino C++ for the room light, JavaScript for this site and its live dashboard.</p>
+        </article>
+        <article class="skill">
+          <h3>Algorithms and graphs</h3>
+          <ul class="tags"><li>Breadth-first search</li><li>Bidirectional BFS</li><li>Shortest paths</li><li>Time and space complexity</li><li>Random graph models</li></ul>
+          <p>Measured O(V + E) growth on networks up to 100,000 users.</p>
+        </article>
+        <article class="skill">
+          <h3>Electronics and embedded</h3>
+          <ul class="tags"><li>Arduino UNO</li><li>PIR sensor (HC-SR501)</li><li>5V relay module</li><li>Breadboard prototyping</li><li>Arduino IDE</li></ul>
+          <p>Built an automatic room light that reacts to movement.</p>
+        </article>
+        <article class="skill">
+          <h3>Tools and workflow</h3>
+          <ul class="tags"><li>Git</li><li>GitHub</li><li>Vercel</li><li>Microsoft Excel</li><li>Microsoft Word</li><li>Technical documentation</li></ul>
+          <p>This site is versioned on GitHub and deployed on Vercel.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+      <h2 class="sec-title">Projects</h2>
+      <p class="sec-sub">Four projects. Filter by type, or open the files behind each one.</p>
+      <div class="filters" role="group" aria-label="Filter projects">
+        <button class="chip on" data-f="all" type="button">All</button>
+        <button class="chip" data-f="data" type="button">Data</button>
+        <button class="chip" data-f="python" type="button">Python</button>
+        <button class="chip" data-f="electronics" type="button">Electronics</button>
+        <button class="chip" data-f="web" type="button">Web</button>
+      </div>
+
+      <div class="proj-grid" id="projGrid">
+
+        <article class="proj" data-cat="data web">
+          <div class="proj-shot shot-cricket" aria-hidden="true">
+            <div class="mini-bars"><i style="--h:100%"></i><i style="--h:48%"></i><i style="--h:46%"></i><i style="--h:44%"></i><i style="--h:41%"></i><i style="--h:41%"></i><i style="--h:27%"></i></div>
+            <span>Runs by country</span>
+          </div>
+          <div class="proj-body">
+            <h3>Cricket Player Performance Analysis</h3>
+            <p>An Excel analytics workbook covering 32 players, 7 countries and 3 formats. Raw data is cleaned (stray spaces trimmed), scored with a Performance Score, summarised in six pivot tables and presented on a dashboard with dropdown filters. I rebuilt it as a live dashboard on this site.</p>
+            <ul class="tags"><li>Excel</li><li>Pivot tables</li><li>Charts</li><li>JavaScript</li></ul>
+            <div class="proj-links">
+              <a class="btn btn-primary sm" href="#dashboard">Open live dashboard</a>
+              <a class="btn btn-ghost sm" href="assets/files/Cricket-Player-Performance-Analysis.xlsx" download>Download Excel</a>
+              <a class="btn btn-ghost sm" href="https://github.com/honeyverma5280-ship-it" target="_blank" rel="noopener">GitHub</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="proj" data-cat="python data">
+          <img class="proj-shot" src="assets/img/bfs-cover-01.jpg" alt="Cover page of the BFS Social Network Connection Finder report" loading="lazy">
+          <div class="proj-body">
+            <h3>BFS Social Network Connection Finder</h3>
+            <p>Finds the shortest chain of friendships between two users. Tested on synthetic networks: average path 3.643 hops in a 10,000-user scale-free network, 81.28 ms for a full traversal of 100,000 users, and bidirectional BFS expanding 99.6% fewer nodes than standard BFS. Includes case studies and a simulated investigation report.</p>
+            <ul class="tags"><li>Python</li><li>Graph theory</li><li>BFS</li><li>Benchmarking</li></ul>
+            <div class="proj-links">
+              <a class="btn btn-primary sm" href="assets/files/BFS-Social-Network-Connection-Finder.pdf" target="_blank" rel="noopener">Read the report (PDF)</a>
+              <a class="btn btn-ghost sm" href="#home">Try BFS on the home page</a>
+              <a class="btn btn-ghost sm" href="https://github.com/honeyverma5280-ship-it" target="_blank" rel="noopener">GitHub</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="proj" data-cat="electronics">
+          <img class="proj-shot" src="assets/img/arduino-circuit.jpg" alt="Circuit diagram of an Arduino UNO connected to a PIR sensor and a relay driving a lamp" loading="lazy">
+          <div class="proj-body">
+            <h3>Automatic Room Light (Arduino and PIR sensor)</h3>
+            <p>A team mini project: a PIR sensor detects movement, an Arduino UNO reads it on pin 2 and switches a relay on pin 8, which turns the light on and off. Estimated cost for the prototype is ₹840 to ₹1,620. Built with Hemant Ravate, Vaishnavi Gangaputra and Sayli Bawse.</p>
+            <ul class="tags"><li>Arduino UNO</li><li>PIR sensor</li><li>Relay</li><li>Embedded C++</li></ul>
+            <div class="proj-links">
+              <button class="btn btn-primary sm" type="button" data-open="assets/img/arduino-block-diagram.jpg" data-cap="Block diagram: person, PIR sensor, Arduino UNO, relay module, room light">View block diagram</button>
+              <a class="btn btn-ghost sm" href="assets/files/Arduino-Room-Light-Mini-Project-Report.docx" download>Download report</a>
+              <a class="btn btn-ghost sm" href="https://github.com/honeyverma5280-ship-it" target="_blank" rel="noopener">GitHub</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="proj" data-cat="web">
+          <div class="proj-shot shot-site" aria-hidden="true"><span>HV</span><span class="dots"><i></i><i></i><i></i></span></div>
+          <div class="proj-body">
+            <h3>This portfolio website</h3>
+            <p>A responsive, hand-written site with a sidebar layout, light and dark themes, a filterable project list, a live data dashboard, a certificate gallery and a clickable BFS network in the hero. Source is on GitHub and it deploys from there to Vercel.</p>
+            <ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>GitHub</li><li>Vercel</li></ul>
+            <div class="proj-links">
+              <a class="btn btn-primary sm" href="https://github.com/honeyverma5280-ship-it" target="_blank" rel="noopener">Source on GitHub</a>
+              <a class="btn btn-ghost sm" href="#home">You're looking at it</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- DASHBOARD -->
+    <section id="dashboard">
+      <h2 class="sec-title">Cricket dashboard</h2>
+      <p class="sec-sub">My Excel workbook, made live. It reads the same 96 cleaned records. Change a filter and everything recalculates, just like the dropdowns on the Excel dashboard sheet.</p>
+
+      <div class="dash-filters">
+        <label>Country<select id="fCountry"></select></label>
+        <label>Format<select id="fFormat"></select></label>
+        <label>Role<select id="fRole"></select></label>
+        <button class="chip" type="button" id="fReset">Reset filters</button>
+        <a class="btn btn-ghost sm" href="assets/files/Cricket-Player-Performance-Analysis.xlsx" download>Download the Excel file</a>
+      </div>
+
+      <div class="kpis" id="kpis" aria-live="polite"></div>
+
+      <div class="tabs" role="tablist" aria-label="Dashboard views">
+        <button role="tab" class="tab on" data-tab="charts" aria-selected="true">Charts</button>
+        <button role="tab" class="tab" data-tab="pivots" aria-selected="false">Pivot tables</button>
+        <button role="tab" class="tab" data-tab="records" aria-selected="false">Records</button>
+        <button role="tab" class="tab" data-tab="insights" aria-selected="false">Insights</button>
+      </div>
+
+      <div class="tabpane on" id="pane-charts">
+        <div class="chart-grid">
+          <div class="card"><h3>Total runs by country</h3><div id="chCountry" class="hbars"></div></div>
+          <div class="card"><h3>Runs by format</h3><div id="chFormat" class="donut-wrap"></div></div>
+          <div class="card"><h3>Wickets by role</h3><div id="chRole" class="hbars"></div></div>
+          <div class="card"><h3>Top 10 players by performance score</h3><div id="chTop" class="hbars"></div></div>
+        </div>
+      </div>
+
+      <div class="tabpane" id="pane-pivots"><div id="pivotArea" class="pivot-area"></div></div>
+
+      <div class="tabpane" id="pane-records">
+        <div class="rec-tools">
+          <label class="search">Search player<input type="search" id="recSearch" placeholder="Type a name, for example Kohli"></label>
+          <span id="recCount" class="muted"></span>
+        </div>
+        <div class="table-scroll">
+          <table class="data" id="recTable">
+            <thead><tr>
+              <th data-k="player">Player</th><th data-k="country">Country</th><th data-k="role">Role</th><th data-k="format">Format</th>
+              <th data-k="matches" class="num">Matches</th><th data-k="runs" class="num">Runs</th><th data-k="avg" class="num">Bat avg</th>
+              <th data-k="sr" class="num">Strike rate</th><th data-k="wickets" class="num">Wickets</th><th data-k="catches" class="num">Catches</th><th data-k="score" class="num">Score</th>
+            </tr></thead>
+            <tbody></tbody>
+          </table>
+        </div>
+        <p class="muted small">Click a column heading to sort.</p>
+      </div>
+
+      <div class="tabpane" id="pane-insights">
+        <ol class="insights">
+          <li>India contributes the highest total runs in the dataset, about 9,095.</li>
+          <li>Ben Stokes has the highest average Performance Score among the top 10 players, at 472.5.</li>
+          <li>ODI has the highest aggregate runs of the three formats.</li>
+          <li>Bowlers contribute the most wickets of any role.</li>
+          <li>T20 has the highest average strike rate, so scoring is fastest in that format.</li>
+          <li>The full dataset holds 32 unique players, 1,084 matches, 31,554 runs and 510 wickets.</li>
+        </ol>
+        <p class="muted small">These are the six insights written on the Insights sheet of the workbook.</p>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education">
+      <h2 class="sec-title">Education</h2>
+      <div class="timeline">
+        <article class="tl-item">
+          <h3>Computer Science and Engineering</h3>
+          <p class="tl-meta">Sandip University, School of Computer Science and Engineering, Nashik · 2025 to present</p>
+          <ul>
+            <li>Winner of Tech Charades at Engineers' Day 2026.</li>
+            <li>Completed a team Arduino mini project and an Excel analytics project.</li>
+            <li>Wrote a technical report on BFS with experiments up to 100,000 simulated users.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- ACHIEVEMENTS -->
+    <section id="achievements">
+      <h2 class="sec-title">Achievements and certificates</h2>
+      <p class="sec-sub">Select a certificate to view it full size.</p>
+      <div class="cert-grid">
+        <figure class="cert">
+          <button type="button" data-open="assets/img/cert-tech-charades-winner.jpg" data-cap="Winners Certificate, Tech Charades, Engineers' Day 2026, Sandip University, 15 September 2026">
+            <img src="assets/img/cert-tech-charades-winner.jpg" alt="Winners Certificate for Tech Charades, Engineers' Day 2026" loading="lazy">
+          </button>
+          <figcaption><strong>Winner, Tech Charades</strong>Engineers' Day 2026, School of CSE, Sandip University · 15 Sep 2026</figcaption>
+        </figure>
+        <figure class="cert">
+          <button type="button" data-open="assets/img/cert-tech-charades-participation.jpg" data-cap="Participation Certificate, Tech Charades, Engineers' Day 2026">
+            <img src="assets/img/cert-tech-charades-participation.jpg" alt="Participation Certificate for Tech Charades, Engineers' Day 2026" loading="lazy">
+          </button>
+          <figcaption><strong>Participant, Tech Charades</strong>Engineers' Day 2026, School of CSE, Sandip University · 15 Sep 2026</figcaption>
+        </figure>
+        <figure class="cert">
+          <button type="button" data-open="assets/img/cert-sun-esports.jpg" data-cap="Certificate of Appreciation to Team Falcons, SUN eSports Club, Sandip University, 3 October 2026">
+            <img src="assets/img/cert-sun-esports.jpg" alt="Certificate of Appreciation presented to Team Falcons by SUN eSports Club" loading="lazy">
+          </button>
+          <figcaption><strong>Certificate of Appreciation, Team Falcons</strong>SUN eSports Club, Sandip University · 3 Oct 2026</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience">
+      <h2 class="sec-title">Experience and activities</h2>
+      <div class="timeline">
+        <article class="tl-item">
+          <h3>Team member, Team Falcons</h3>
+          <p class="tl-meta">SUN eSports Club, Sandip University · 2026</p>
+          <p>Recognised with a Certificate of Appreciation for contributions, dedication and commitment to the club and its competitive community.</p>
+        </article>
+        <article class="tl-item">
+          <h3>Competitor and winner, Tech Charades</h3>
+          <p class="tl-meta">Engineers' Day 2026, School of CSE · 15 September 2026</p>
+          <p>Won the technical charades event, judged on intelligence, teamwork, creativity and quick thinking.</p>
+        </article>
+        <article class="tl-item">
+          <h3>Team project: Automatic Room Light</h3>
+          <p class="tl-meta">Mini project with three teammates · 2026</p>
+          <p>Designed, wired and documented an Arduino and PIR sensor system, from block diagram to cost estimate.</p>
+        </article>
+        <article class="tl-item">
+          <h3>Seeking: first internship</h3>
+          <p class="tl-meta">Open to data analysis, software and embedded roles</p>
+          <p>I haven't done an internship yet, so I'm building real projects to show what I can do. If you have an opening, I'd like to hear from you.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <h2 class="sec-title">Contact me</h2>
+      <div class="contact-grid">
+        <div class="contact-links">
+          <p class="sec-sub">The quickest way to reach me is email. I also reply on LinkedIn.</p>
+          <ul>
+            <li><span>Email</span><a href="mailto:honeyverma5280@gmail.com">honeyverma5280@gmail.com</a></li>
+            <li><span>LinkedIn</span><a href="https://www.linkedin.com/in/honey-verma-b00669422" target="_blank" rel="noopener">linkedin.com/in/honey-verma-b00669422</a></li>
+            <li><span>GitHub</span><a href="https://github.com/honeyverma5280-ship-it" target="_blank" rel="noopener">github.com/honeyverma5280-ship-it</a></li>
+          </ul>
+        </div>
+        <form class="card form" id="contactForm" novalidate>
+          <label>Your name<input name="name" type="text" autocomplete="name" required></label>
+          <label>Your email<input name="email" type="email" autocomplete="email" required></label>
+          <label>Message<textarea name="msg" rows="5" required></textarea></label>
+          <button class="btn btn-primary" type="submit">Open in my email app</button>
+          <p class="muted small" id="formNote" role="status">This opens your email app with the message filled in, addressed to me.</p>
+        </form>
+      </div>
+      <footer class="foot">© <span id="yr">2026</span> Honey Verma. Built by hand with HTML, CSS and JavaScript.</footer>
+    </section>
+  </main>
+
+  <dialog id="lightbox" aria-label="Image viewer">
+    <form method="dialog"><button class="close" aria-label="Close image">Close</button></form>
+    <img id="lbImg" alt="">
+    <p id="lbCap"></p>
+  </dialog>
+
+  <script src="assets/data/cricket.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/dashboard.js"></script>
+</body>
+</html>
